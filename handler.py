@@ -1,11 +1,11 @@
 import base64
+import runpod   # <--- dodane
 
 def handler(event):
     """
     RunPod handler function.
     `event` zawiera dane wejściowe wysłane przez API.
     """
-
     # Pobierz parametry wejściowe
     input_data = event.get("input", {})
     preset = input_data.get("preset", "restore")
@@ -18,3 +18,11 @@ def handler(event):
         "status": "ok",
         "result": result_text
     }
+
+# 🔑 to jest najważniejsze — start serverlessa
+runpod.serverless.start({"handler": handler})
+
+# Ułatwia szybki test lokalny
+if __name__ == "__main__":
+    print(handler({"input": {"preset": "restore"}}))
+
