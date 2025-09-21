@@ -1,0 +1,25 @@
+{
+  "version": "1",
+  "tags": ["image", "ai", "restore", "colorize"],
+  "inputs": [
+    {
+      "key": "image_base64",
+      "input": {
+        "name": "Image Base64",
+        "type": "string",
+        "description": "Obraz wejściowy w Base64",
+        "example": "<BASE64_STRING>"
+      }
+    },
+    {
+      "key": "preset",
+      "input": {
+        "name": "Preset",
+        "type": "string",
+        "description": "Typ operacji AI",
+        "default": "restore",
+        "enum": ["restore", "colorize"]
+      }
+    }
+  ]
+}
