@@ -1,4 +1,4 @@
-[![RunPod](https://api.runpod.io/badge/acjurek/pasttophotos-runpod)](https://console.runpod.io/hub/acjurek/pasttophotos-runpod)
+[![RunPod](https://github.com/acjurek/pasttophotos-runpod/releases)](https://github.com/acjurek/pasttophotos-runpod/releases)
 
 # pasttophotos-runpod
 
